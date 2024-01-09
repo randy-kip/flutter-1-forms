@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:forms_fa/shared/menu_drawer.dart';
+import 'package:forms_fa/widgets/basic_form.dart';
 // import 'package:forms/widgets/password_reset_form.dart';
 
 void main() {
@@ -16,8 +18,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const MyHomePage(title: 'Flutter Widgets'),
+      // home: const MyHomePage(title: 'Flutter Widgets'),
       debugShowCheckedModeBanner: false,
+      routes: {
+        '/': (context) => const MyHomePage(title: 'FW'),
+        '/bf': (context) => const BasicForm()
+      },
+      initialRoute: '/',
     );
   }
 }
@@ -40,6 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      drawer: const MenuDrawer(),
       body: const Center(
         child: Padding(
           padding: EdgeInsets.all(0),
