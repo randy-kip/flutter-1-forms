@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:forms_fa/shared/menu_drawer.dart';
 import 'package:forms_fa/widgets/basic_form.dart';
+import 'package:forms_fa/widgets/checkbox_form_field.dart';
+import 'package:forms_fa/widgets/checkbox_input.dart';
+import 'package:forms_fa/widgets/dropdown_input.dart';
+import 'package:forms_fa/widgets/emails_input.dart';
+import 'package:forms_fa/widgets/multi_widget_form.dart';
+import 'package:forms_fa/widgets/password_reset_form.dart';
+import 'package:forms_fa/widgets/password_reset_form_field.dart';
+import 'package:forms_fa/widgets/radio_input.dart';
+import 'package:forms_fa/widgets/slider_input.dart';
+import 'package:forms_fa/widgets/switch_input.dart';
+import 'package:forms_fa/widgets/text_input.dart';
+import 'package:forms_fa/widgets/validating_form.dart';
 // import 'package:forms/widgets/password_reset_form.dart';
 
 void main() {
@@ -22,7 +34,19 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const MyHomePage(title: 'FW'),
-        '/bf': (context) => const BasicForm()
+        '/bf': (context) => const BasicForm(),
+        '/cff': (context) => CheckboxFormField(),
+        '/cin': (context) => const CheckboxInput(),
+        '/drop': (context) => const DropdownInput(),
+        '/emails': (context) => const EmailsInput(),
+        '/multi': (context) => const MultiWidgetForm(),
+        '/passfield': (context) => PasswordResetFormField(),
+        '/passreset': (context) => const PasswordResetForm(),
+        '/radio': (context) => const RadioInput(),
+        '/slider': (context) => const SliderInput(),
+        '/switch': (context) => const SwitchInput(),
+        '/text': (context) => const TextInput(),
+        '/validating': (context) => const ValidatingForm()        
       },
       initialRoute: '/',
     );
