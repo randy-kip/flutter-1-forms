@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:forms_fa/screens/basic_form_screen.dart';
 import 'package:forms_fa/shared/menu_drawer.dart';
-import 'package:forms_fa/widgets/basic_form.dart';
 import 'package:forms_fa/widgets/checkbox_form_field.dart';
 import 'package:forms_fa/widgets/checkbox_input.dart';
 import 'package:forms_fa/widgets/dropdown_input.dart';
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const MyHomePage(title: 'FW'),
-        '/basic': (context) => const BasicForm(),
+        '/basic': (context) => const BasicFormScreen(),
         '/checkfield': (context) => CheckboxFormField(),
         '/checkinput': (context) => const CheckboxInput(),
         '/dropdown': (context) => const DropdownInput(),

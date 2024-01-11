@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:forms_fa/main.dart';
-import 'package:forms_fa/widgets/basic_form.dart';
+import 'package:forms_fa/screens/basic_form_screen.dart';
 import 'package:forms_fa/widgets/checkbox_form_field.dart';
 import 'package:forms_fa/widgets/checkbox_input.dart';
 import 'package:forms_fa/widgets/dropdown_input.dart';
@@ -60,7 +60,7 @@ class MenuDrawer extends StatelessWidget {
               screen = const MyHomePage(title: 'Yop',);
               break;
             case 'Basic Form':
-              screen = const BasicForm();
+              screen = const BasicFormScreen();
               break;
             case 'Checkbox Form Field':
               screen = CheckboxFormField();
