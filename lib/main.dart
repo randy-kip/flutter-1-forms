@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:forms_fa/screens/basic_form_screen.dart';
+import 'package:forms_fa/screens/checkbox_screen.dart';
 import 'package:forms_fa/shared/menu_drawer.dart';
-import 'package:forms_fa/widgets/checkbox_form_field.dart';
-import 'package:forms_fa/widgets/checkbox_input.dart';
 import 'package:forms_fa/widgets/dropdown_input.dart';
 import 'package:forms_fa/widgets/emails_input.dart';
 import 'package:forms_fa/widgets/multi_widget_form.dart';
@@ -35,8 +34,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const MyHomePage(title: 'FW'),
         '/basic': (context) => const BasicFormScreen(),
-        '/checkfield': (context) => CheckboxFormField(),
-        '/checkinput': (context) => const CheckboxInput(),
+        '/checkbox': (context) => const CheckboxScreen(),
         '/dropdown': (context) => const DropdownInput(),
         '/emails': (context) => const EmailsInput(),
         '/multi': (context) => const MultiWidgetForm(),

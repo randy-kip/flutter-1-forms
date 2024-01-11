@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:forms_fa/main.dart';
 import 'package:forms_fa/screens/basic_form_screen.dart';
-import 'package:forms_fa/widgets/checkbox_form_field.dart';
-import 'package:forms_fa/widgets/checkbox_input.dart';
+import 'package:forms_fa/screens/checkbox_screen.dart';
 import 'package:forms_fa/widgets/dropdown_input.dart';
 import 'package:forms_fa/widgets/emails_input.dart';
 import 'package:forms_fa/widgets/multi_widget_form.dart';
@@ -29,8 +28,7 @@ class MenuDrawer extends StatelessWidget {
   List<Widget> buildMenuItems(BuildContext context) {
     final List<String> menuTitles = [
       'Basic Form',
-      'Checkbox Form Field',
-      'Checkbox Input',
+      'Checkbox',
       'Dropdown Input',
       'Emails Input',
       'MultiWidget Form',
@@ -62,11 +60,8 @@ class MenuDrawer extends StatelessWidget {
             case 'Basic Form':
               screen = const BasicFormScreen();
               break;
-            case 'Checkbox Form Field':
-              screen = CheckboxFormField();
-              break;
-            case 'Checkbox Input':
-              screen = const CheckboxInput();
+            case 'Checkbox':
+              screen = const CheckboxScreen();
               break;
             case 'Dropdown Input':
               screen = const DropdownInput();
