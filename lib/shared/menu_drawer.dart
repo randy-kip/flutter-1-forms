@@ -70,7 +70,7 @@ class MenuDrawer extends StatelessWidget {
               screen = const EmailSignInScreen();
               break;
             case 'MultiWidget Form':
-              screen = const MultiWidgetFormScreen();
+              screen = const MultiWidgetScreen();
               break;
             case 'Password Reset Form Field':
               screen = PasswordResetFormField();

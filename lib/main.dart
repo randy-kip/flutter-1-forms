@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         '/checkbox': (context) => const CheckboxScreen(),
         '/dropdown': (context) => const DropdownScreen(),
         '/emails': (context) => const EmailSignInScreen(),
-        '/multi': (context) => const MultiWidgetFormScreen(),
+        '/multi': (context) => const MultiWidgetScreen(),
         '/passfield': (context) => PasswordResetFormField(),
         '/passreset': (context) => const PasswordResetForm(),
         '/radio': (context) => const RadioInput(),
