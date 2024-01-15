@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:forms_fa/main.dart';
 import 'package:forms_fa/screens/basic_form_screen.dart';
 import 'package:forms_fa/screens/checkbox_screen.dart';
-import 'package:forms_fa/widgets/dropdown_input.dart';
-import 'package:forms_fa/widgets/emails_input.dart';
+import 'package:forms_fa/screens/dropdown_screen.dart';
+import 'package:forms_fa/screens/emails_screen.dart';
 import 'package:forms_fa/widgets/multi_widget_form.dart';
 import 'package:forms_fa/widgets/password_reset_form.dart';
 import 'package:forms_fa/widgets/password_reset_form_field.dart';
@@ -64,10 +64,10 @@ class MenuDrawer extends StatelessWidget {
               screen = const CheckboxScreen();
               break;
             case 'Dropdown Input':
-              screen = const DropdownInput();
+              screen = const DropdownScreen();
               break;
             case 'Emails Input':
-              screen = const EmailsInput();
+              screen = const EmailSignInScreen();
               break;
             case 'MultiWidget Form':
               screen = const MultiWidgetForm();
