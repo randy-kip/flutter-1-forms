@@ -3,8 +3,8 @@ import 'package:forms_fa/screens/basic_form_screen.dart';
 import 'package:forms_fa/screens/checkbox_screen.dart';
 import 'package:forms_fa/screens/dropdown_screen.dart';
 import 'package:forms_fa/screens/emails_screen.dart';
+import 'package:forms_fa/screens/multi_widget_screen.dart';
 import 'package:forms_fa/shared/menu_drawer.dart';
-import 'package:forms_fa/widgets/multi_widget_form.dart';
 import 'package:forms_fa/widgets/password_reset_form.dart';
 import 'package:forms_fa/widgets/password_reset_form_field.dart';
 import 'package:forms_fa/widgets/radio_input.dart';
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         '/checkbox': (context) => const CheckboxScreen(),
         '/dropdown': (context) => const DropdownScreen(),
         '/emails': (context) => const EmailSignInScreen(),
-        '/multi': (context) => const MultiWidgetForm(),
+        '/multi': (context) => const MultiWidgetFormScreen(),
         '/passfield': (context) => PasswordResetFormField(),
         '/passreset': (context) => const PasswordResetForm(),
         '/radio': (context) => const RadioInput(),
