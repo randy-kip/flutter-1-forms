@@ -30,10 +30,10 @@ class _PasswordResetFormState extends State<PasswordResetForm> {
                       print("Password: ${passwords?.password}");
                     }
                   },
-                  validator: (Passwords passwords) {
-                    if (passwords.nonEmpty()) {
-                      if (passwords.match()) {
-                        if (passwords.valid()) {
+                  validator: (Passwords? passwords) {
+                    if (passwords?.nonEmpty() ?? false) {
+                      if (passwords?.match() ?? false) {
+                        if (passwords?.valid() ?? false) {
                           return null;
                         }
                         return "Passwords should be 8 characters long";

@@ -5,9 +5,8 @@ import 'package:forms_fa/screens/checkbox_screen.dart';
 import 'package:forms_fa/screens/dropdown_screen.dart';
 import 'package:forms_fa/screens/emails_screen.dart';
 import 'package:forms_fa/screens/multi_widget_screen.dart';
-import 'package:forms_fa/widgets/password_reset_form.dart';
-import 'package:forms_fa/widgets/password_reset_form_field.dart';
-import 'package:forms_fa/widgets/radio_input.dart';
+import 'package:forms_fa/screens/password_screen.dart';
+import 'package:forms_fa/screens/radio_screen.dart';
 import 'package:forms_fa/widgets/slider_input.dart';
 import 'package:forms_fa/widgets/switch_input.dart';
 import 'package:forms_fa/widgets/text_input.dart';
@@ -32,9 +31,8 @@ class MenuDrawer extends StatelessWidget {
       'Dropdown Input',
       'Emails Input',
       'MultiWidget Form',
-      'Password Reset Form Field',
-      'Password Reset Form',
-      'Radio Input',
+      'Password Reset',
+      'Radio',
       'Slider Input',
       'Switch Input',
       'Text Input',
@@ -72,14 +70,11 @@ class MenuDrawer extends StatelessWidget {
             case 'MultiWidget Form':
               screen = const MultiWidgetScreen();
               break;
-            case 'Password Reset Form Field':
-              screen = PasswordResetFormField();
+            case 'Password Reset':
+              screen = const PasswordResetScreen();
               break;
-            case 'Password Reset Form':
-              screen = const PasswordResetForm();
-              break;
-            case 'Radio Input':
-              screen = const RadioInput();
+            case 'Radio':
+              screen = const RadioInputScreen();
               break;
             case 'Slider Input':
               screen = const SliderInput();
