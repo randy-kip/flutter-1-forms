@@ -6,8 +6,8 @@ import 'package:forms_fa/screens/emails_screen.dart';
 import 'package:forms_fa/screens/multi_widget_screen.dart';
 import 'package:forms_fa/screens/password_screen.dart';
 import 'package:forms_fa/screens/radio_screen.dart';
+import 'package:forms_fa/screens/slider_screen.dart';
 import 'package:forms_fa/shared/menu_drawer.dart';
-import 'package:forms_fa/widgets/slider_input.dart';
 import 'package:forms_fa/widgets/switch_input.dart';
 import 'package:forms_fa/widgets/text_input.dart';
 import 'package:forms_fa/widgets/validating_form.dart';
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
         '/multi': (context) => const MultiWidgetScreen(),
         '/passfield': (context) => const PasswordResetScreen(),
         '/radio': (context) => const RadioInputScreen(),
-        '/slider': (context) => const SliderInput(),
+        '/slider': (context) => const SliderScreen(),
         '/switch': (context) => const SwitchInput(),
         '/text': (context) => const TextInput(),
         '/validating': (context) => const ValidatingForm()        

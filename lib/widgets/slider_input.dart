@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class SliderInput extends StatefulWidget {
   const SliderInput({super.key});
 
+  double get sliderValue => 2.0;
+
   @override
   State<StatefulWidget> createState() => _SliderInputState();
 }
