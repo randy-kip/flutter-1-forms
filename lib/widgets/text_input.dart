@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class TextInput extends StatefulWidget {
-  const TextInput({super.key});
+  const TextInput({super.key, required String hintText});
 
   @override
   State<StatefulWidget> createState() => _TextInputState();

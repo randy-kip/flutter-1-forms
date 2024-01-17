@@ -9,8 +9,7 @@ import 'package:forms_fa/screens/password_screen.dart';
 import 'package:forms_fa/screens/radio_screen.dart';
 import 'package:forms_fa/screens/slider_screen.dart';
 import 'package:forms_fa/screens/switch_input_screen.dart';
-import 'package:forms_fa/widgets/switch_input.dart';
-import 'package:forms_fa/widgets/text_input.dart';
+import 'package:forms_fa/screens/text_input_screen.dart';
 import 'package:forms_fa/widgets/validating_form.dart';
 
 class MenuDrawer extends StatelessWidget {
@@ -36,7 +35,7 @@ class MenuDrawer extends StatelessWidget {
       'Radio',
       'Slider',
       'Switch',
-      'Text Input',
+      'Zazz Text',
       'Validating Form'
     ];
     List<Widget> menuItems = [];
@@ -84,7 +83,7 @@ class MenuDrawer extends StatelessWidget {
               screen = const SwitchScreen();
               break;
             case 'Text Input':
-              screen = const TextInput();
+              screen = const ZazzTextInputScreen();
               break;
             case 'Validating Form':
               screen = const ValidatingForm();
