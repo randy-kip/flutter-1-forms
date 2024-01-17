@@ -9,8 +9,8 @@ import 'package:forms_fa/screens/radio_screen.dart';
 import 'package:forms_fa/screens/slider_screen.dart';
 import 'package:forms_fa/screens/switch_input_screen.dart';
 import 'package:forms_fa/screens/text_input_screen.dart';
+import 'package:forms_fa/screens/validating_form_screen.dart';
 import 'package:forms_fa/shared/menu_drawer.dart';
-import 'package:forms_fa/widgets/validating_form.dart';
 // import 'package:forms/widgets/password_reset_form.dart';
 
 void main() {
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         '/slider': (context) => const SliderScreen(),
         '/switch': (context) => const SwitchScreen(),
         '/text': (context) => const ZazzTextInputScreen(),
-        '/validating': (context) => const ValidatingForm()        
+        '/validating': (context) => const PurpleHazeScreen()        
       },
       initialRoute: '/',
     );

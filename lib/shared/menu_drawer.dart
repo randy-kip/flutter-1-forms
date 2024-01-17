@@ -10,8 +10,7 @@ import 'package:forms_fa/screens/radio_screen.dart';
 import 'package:forms_fa/screens/slider_screen.dart';
 import 'package:forms_fa/screens/switch_input_screen.dart';
 import 'package:forms_fa/screens/text_input_screen.dart';
-import 'package:forms_fa/widgets/validating_form.dart';
-
+import 'package:forms_fa/screens/validating_form_screen.dart';
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
 
@@ -36,7 +35,7 @@ class MenuDrawer extends StatelessWidget {
       'Slider',
       'Switch',
       'Zazz Text',
-      'Validating Form'
+      'Validation'
     ];
     List<Widget> menuItems = [];
     menuItems.add(const DrawerHeader(
@@ -76,17 +75,17 @@ class MenuDrawer extends StatelessWidget {
             case 'Radio':
               screen = const RadioInputScreen();
               break;
-            case 'Slider Input':
+            case 'Slider':
               screen = const SliderScreen();
               break;
-            case 'Switch Input':
+            case 'Switch':
               screen = const SwitchScreen();
               break;
-            case 'Text Input':
+            case 'Zazz Text':
               screen = const ZazzTextInputScreen();
               break;
-            case 'Validating Form':
-              screen = const ValidatingForm();
+            case 'Validation':
+              screen = const PurpleHazeScreen();
               break;
           }
           Navigator.of(context).pop();
