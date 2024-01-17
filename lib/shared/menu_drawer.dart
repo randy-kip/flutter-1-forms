@@ -8,6 +8,7 @@ import 'package:forms_fa/screens/multi_widget_screen.dart';
 import 'package:forms_fa/screens/password_screen.dart';
 import 'package:forms_fa/screens/radio_screen.dart';
 import 'package:forms_fa/screens/slider_screen.dart';
+import 'package:forms_fa/screens/switch_input_screen.dart';
 import 'package:forms_fa/widgets/switch_input.dart';
 import 'package:forms_fa/widgets/text_input.dart';
 import 'package:forms_fa/widgets/validating_form.dart';
@@ -34,7 +35,7 @@ class MenuDrawer extends StatelessWidget {
       'Password Reset',
       'Radio',
       'Slider',
-      'Switch Input',
+      'Switch',
       'Text Input',
       'Validating Form'
     ];
@@ -80,7 +81,7 @@ class MenuDrawer extends StatelessWidget {
               screen = const SliderScreen();
               break;
             case 'Switch Input':
-              screen = const SwitchInput();
+              screen = const SwitchScreen();
               break;
             case 'Text Input':
               screen = const TextInput();

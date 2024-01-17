@@ -7,8 +7,8 @@ import 'package:forms_fa/screens/multi_widget_screen.dart';
 import 'package:forms_fa/screens/password_screen.dart';
 import 'package:forms_fa/screens/radio_screen.dart';
 import 'package:forms_fa/screens/slider_screen.dart';
+import 'package:forms_fa/screens/switch_input_screen.dart';
 import 'package:forms_fa/shared/menu_drawer.dart';
-import 'package:forms_fa/widgets/switch_input.dart';
 import 'package:forms_fa/widgets/text_input.dart';
 import 'package:forms_fa/widgets/validating_form.dart';
 // import 'package:forms/widgets/password_reset_form.dart';
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
         '/passfield': (context) => const PasswordResetScreen(),
         '/radio': (context) => const RadioInputScreen(),
         '/slider': (context) => const SliderScreen(),
-        '/switch': (context) => const SwitchInput(),
+        '/switch': (context) => const SwitchScreen(),
         '/text': (context) => const TextInput(),
         '/validating': (context) => const ValidatingForm()        
       },
