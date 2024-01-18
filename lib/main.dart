@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: 'Playfair Display',
       ),
       // home: const MyHomePage(title: 'Flutter Widgets'),
       debugShowCheckedModeBanner: false,
@@ -66,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
         title: Text(widget.title),
+        backgroundColor: Color.alphaBlend(Colors.blueGrey, Colors.red),
       ),
       drawer: const MenuDrawer(),
       body: const Center(

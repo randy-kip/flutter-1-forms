@@ -9,6 +9,7 @@ class BasicFormScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Basic Form Screen'),
+        backgroundColor: const Color.fromARGB(255, 81, 84, 243),
       ),
       body: const Padding(
         padding: EdgeInsets.all(16.0),
