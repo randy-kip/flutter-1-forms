@@ -11,7 +11,8 @@ import 'package:forms_fa/screens/switch_input_screen.dart';
 import 'package:forms_fa/screens/text_input_screen.dart';
 import 'package:forms_fa/screens/validating_form_screen.dart';
 import 'package:forms_fa/shared/menu_drawer.dart';
-// import 'package:forms/widgets/password_reset_form.dart';
+
+// import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        fontFamily: 'Playfair Display',
       ),
       // home: const MyHomePage(title: 'Flutter Widgets'),
       debugShowCheckedModeBanner: false,
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
         '/slider': (context) => const SliderScreen(),
         '/switch': (context) => const SwitchScreen(),
         '/text': (context) => const ZazzTextInputScreen(),
-        '/validating': (context) => const PurpleHazeScreen()        
+        '/validating': (context) => const PurpleHazeScreen()
       },
       initialRoute: '/',
     );

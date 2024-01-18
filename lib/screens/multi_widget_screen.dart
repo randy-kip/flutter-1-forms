@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:forms_fa/widgets/multi_widget_form.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 class MultiWidgetScreen extends StatelessWidget {
   const MultiWidgetScreen({super.key});
@@ -8,7 +9,10 @@ class MultiWidgetScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Multi Widget Form"),
+        title: const Text(
+          'Multi Widget Form',
+          // style: GoogleFonts.acme(),
+        ),
         backgroundColor: const Color.fromARGB(255, 201, 149, 8),
       ),
       body: const Padding(
