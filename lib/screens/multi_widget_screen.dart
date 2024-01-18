@@ -6,27 +6,26 @@ class MultiWidgetScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Multi Widget Form',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        hintColor: Colors.orangeAccent,
-        fontFamily: 'Roboto', // Customize the font as needed
-        // Add more theme configurations as per your preference
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Multi Widget Form"),
+        backgroundColor: const Color.fromARGB(255, 201, 149, 8),
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Multi Widget Form'),
-        ),
-        body: const Padding(
-          padding: EdgeInsets.all(16.0),
-          child: MultiWidgetForm(),
-        ),
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
+        child: MultiWidgetForm(),
       ),
     );
   }
 }
 
 void main() {
-  runApp(const MultiWidgetScreen());
+  runApp(MaterialApp(
+    title: 'Multi Widget Form',
+    theme: ThemeData(
+        primarySwatch: Colors.red,
+        hintColor: const Color.fromARGB(255, 68, 255, 124),
+        fontFamily: 'Proxima Nova'),
+    home: const MultiWidgetScreen(),
+  ));
 }
