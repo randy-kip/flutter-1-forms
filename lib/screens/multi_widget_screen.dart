@@ -11,7 +11,7 @@ class MultiWidgetScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Multi Widget Form',
-          // style: GoogleFonts.acme(),
+          style: TextStyle(fontFamily: 'Raleway'),
         ),
         backgroundColor: const Color.fromARGB(255, 201, 149, 8),
       ),
@@ -29,7 +29,7 @@ void main() {
     theme: ThemeData(
         primarySwatch: Colors.red,
         hintColor: const Color.fromARGB(255, 68, 255, 124),
-        fontFamily: 'Proxima Nova'),
+        fontFamily: 'Raleway'),
     home: const MultiWidgetScreen(),
   ));
 }

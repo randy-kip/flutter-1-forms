@@ -12,8 +12,6 @@ import 'package:forms_fa/screens/text_input_screen.dart';
 import 'package:forms_fa/screens/validating_form_screen.dart';
 import 'package:forms_fa/shared/menu_drawer.dart';
 
-// import 'package:google_fonts/google_fonts.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -28,6 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: 'Playfairdisplay'
       ),
       // home: const MyHomePage(title: 'Flutter Widgets'),
       debugShowCheckedModeBanner: false,
