@@ -22,7 +22,7 @@ class BasicFormScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                fontFamily: 'Playfair Display'
+                fontFamily: 'PlayfairDisplay',
               ),
             ),
             SizedBox(height: 20),
