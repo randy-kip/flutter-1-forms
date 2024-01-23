@@ -10,7 +10,9 @@ class CheckboxFormField extends FormField<bool> {
       AutovalidateMode autovalidateMode = AutovalidateMode.disabled})
       : super(
             onSaved: onSaved,
-            validator: validator,
+            validator: (bool? value) {
+            return value == true ? null : "You must check this";
+          },
             initialValue: initialValue,
             autovalidateMode: autovalidateMode,
             builder: (FormFieldState<bool> state) {
